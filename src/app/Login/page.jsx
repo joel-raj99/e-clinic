@@ -66,8 +66,7 @@ export default function Login() {
               type="email"
               placeholder="Enter your email"
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#E01CC8]"
-            />
+ className="w-full text-black px-4 py-2 border-b border-gray-400 focus:outline-none focus:border-[#E01CC8] transition"            />
           </div>
 
           {/* Password Field */}
@@ -79,8 +78,7 @@ export default function Login() {
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#E01CC8] pr-10"
-            />
+ className="w-full text-black px-4 py-2 border-b border-gray-400 focus:outline-none focus:border-[#E01CC8] transition"            />
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
@@ -101,7 +99,7 @@ export default function Login() {
 
           {/* Forget Password */}
           <div className="text-center mt-4">
-            <span>
+            <span className="text-gray-600">
               Forget your Password?
               <Link href="../Forget" className="text-[#E01CC8] ml-2">
                 Forget Password

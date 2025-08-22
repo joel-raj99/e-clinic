@@ -60,8 +60,7 @@ export default function Forget() {
               value={email}
               placeholder="Enter your email"
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#E01CC8]"
-            />
+ className="w-full px-4 py-2 border-b border-gray-400 focus:outline-none focus:border-[#E01CC8] transition"            />
           </div>
 
           <button
