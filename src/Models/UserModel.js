@@ -24,7 +24,7 @@ const UserSchema = new Schema(
     },
   role: {
     type: String,
-    enum: ["admin", "user"],
+    enum: ["super-admin","doctor-admin", "reception","patient","doctors"],
     
   },
     otp: { type: String, default: null },
